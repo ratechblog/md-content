@@ -1,0 +1,46 @@
+Title: .htaccess notes
+Content: * enable mod_rewrite with `RewriteEngine On`
+* RewriteCond
+* RewriteRule
+* RewriteBase
+* for testing, use redirect code R=302 (caching issues in case of R=301)
+
+  
+* R
+  * Redirect (default: 302)
+  * 301 permanently
+  * 302 dynamically
+
+  
+* NC
+  * No Case
+  * disable case-sensitivity
+
+  
+* L
+  * Last
+  * dont execute other rules after this
+
+
+#### Example
+```
+#enable mod_rewrite
+RewriteEngine On
+
+#force non-WWW
+RewriteCond %{HTTP_HOST} ^www\.(.*)$
+RewriteRule (.*) https://%1/$1 [R=301,L]
+
+#force HTTPS
+RewriteCond %{SERVER_PORT} 80 
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+#redirect to sub directory
+RewriteCond %{HTTP_HOST} ^(www.)?domain.tld$
+RewriteCond %{REQUEST_URI} !^/subfolder/
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /subfolder/$1
+RewriteCond %{HTTP_HOST} ^(www.)?domain.tld$
+RewriteRule ^(/)?$ subfolder/ [L]
+```

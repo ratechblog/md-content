@@ -1,0 +1,5 @@
+Title: All set and done
+Content: * customize framework, template and css
+* setup https
+* redirect www to non-www
+* redirect transparently to subfolder

@@ -1,0 +1,11 @@
+Title: Choice of tools
+Content: If you want to develop a website (or any other application), you will need to examine your requirements and find an appropriate solution for the implementation. For example, static vs. dynamic website, whether to start from scratch, or use some low level / generic framework or a fully featured CMS.
+
+[Bootstrap](https://de.wikipedia.org/wiki/Bootstrap_(Framework)) is a very useful front-end web framework.
+
+Often, there is no benefit in [reinventing the wheel](https://en.wikipedia.org/wiki/Reinventing_the_wheel). A prominent choice for a blogging software would be WordPress, etc..., but for now, it would add too much overhead and complexity for my current purposes.
+
+A simpler and more basic approach are static websites. I first stumbled upon [Jekyll](https://en.wikipedia.org/wiki/Jekyll_(software)), a static site generator, which does not require PHP or a Database. After playing a little bit with Jekyll, i find it is very good and recommendable for the right purposes.
+But i came to the conclusion, that i wanted a code base with the possibility of adding PHP / MySQL and without the requirements of Ruby, Git and everytime re-generating the whole site.
+
+For now, i chose [Bludit](https://github.com/dignajar/bludit), a flat file CMS, requiring only PHP.
