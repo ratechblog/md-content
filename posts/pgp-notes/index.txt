@@ -1,0 +1,26 @@
+Title: PGP notes
+Content: Encrypted communication is something that everyone should be aware of. The following example illustrates, how to use asymmetric cryptography to send an ecnrypted message from Alice to Bob.
+
+# Send encrypted message from Alice to Bob
+
+### Generate key pair for Alice
+* `gpg --gen-key`
+
+### Inspect public key
+* `gpg --armor --export Alice > alice.pub`
+* `cat alice.pub`
+
+### List keys
+* `gpg --list-keys`
+
+### Import public key from Bob
+* `gpg --import bob.pub`
+
+### Encrypt message
+* `gpg --out message_encrypted --armor --encrypt message`
+* --armor: enable output to be opened as ASCII file
+* Enter recipient: Bob
+
+### Decrypt message
+* `gpg --out message_decrypted --decrypt message_encrypted`
+* Enter passphrase: ...

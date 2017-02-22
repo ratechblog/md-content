@@ -1,2 +1,71 @@
 Title: Markdown notes
-Content: [https://en.wikipedia.org/wiki/Markdown](https://en.wikipedia.org/wiki/Markdown)
+Content: If you ever have wondered what these \*.md files are (ex. README.md), it is Markdown syntax. The idea is to use less meta tags for text formating, in order to provide better readability, opposed to "Markup" languages like HTML.
+
+[https://en.wikipedia.org/wiki/Markdown](https://en.wikipedia.org/wiki/Markdown)
+
+<pre><code class="language-markdown">
+# Heading
+
+## Sub-heading
+
+### Another deeper heading
+ 
+Paragraphs are separated
+by a blank line.
+
+Two spaces at the end of a line leave a  
+line break.
+
+Text attributes _italic_, *italic*, __bold__, **bold**, `monospace`.
+
+Horizontal rule:
+
+---
+
+Bullet list:
+
+  * apples
+  * oranges
+  * pears
+
+Numbered list:
+
+  1. apples
+  2. oranges
+  3. pears
+
+A [link](http://example.com).
+</code></pre>
+
+<br>
+# Heading
+
+## Sub-heading
+
+### Another deeper heading
+ 
+Paragraphs are separated
+by a blank line.
+
+Two spaces at the end of a line leave a  
+line break.
+
+Text attributes _italic_, *italic*, __bold__, **bold**, `monospace`.
+
+Horizontal rule:
+
+---
+
+Bullet list:
+
+  * apples
+  * oranges
+  * pears
+
+Numbered list:
+
+  1. apples
+  2. oranges
+  3. pears
+
+A [link](http://example.com).

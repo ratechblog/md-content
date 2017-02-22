@@ -1,29 +1,32 @@
 Title: .htaccess notes
-Content: * enable mod_rewrite with `RewriteEngine On`
-* RewriteCond
-* RewriteRule
-* RewriteBase
+Content: ### .htaccess
+* only available on NCSA compatible web servers, like Apache
+  * Nginx is NOT compatible
+* enable mod_rewrite with `RewriteEngine On`
+* `RewriteCond`
+* `RewriteRule`
+* `RewriteBase`
 * for testing, use redirect code R=302 (caching issues in case of R=301)
 
-  
-* R
-  * Redirect (default: 302)
-  * 301 permanently
-  * 302 dynamically
+### [R]
+* Redirect (default: 302)
+* 301 permanently
+* 302 dynamically
+* changes visible url in browser
 
-  
-* NC
-  * No Case
-  * disable case-sensitivity
+### [NC]
+* No Case
+* disable case-sensitivity
 
-  
-* L
-  * Last
-  * dont execute other rules after this
+### [L]
+* Last
+* do not execute other rules after this
 
 
-#### Example
-```
+### Examples
+
+#### General
+<pre><code class="language-apacheconf">
 #enable mod_rewrite
 RewriteEngine On
 
@@ -43,4 +46,15 @@ RewriteCond %{REQUEST_URI} !^/subfolder/
 RewriteRule ^(.*)$ /subfolder/$1
 RewriteCond %{HTTP_HOST} ^(www.)?domain.tld$
 RewriteRule ^(/)?$ subfolder/ [L]
-```
+</code></pre>
+
+#### Remove urls from search engine index
+<pre><code class="language-apacheconf">
+#enable mod_rewrite
+RewriteEngine On
+
+#remove urls from search engine index
+#Redirect 410 /subfolder/a/b
+RewriteCond %{REQUEST_URI} ^/subfolder/(.*)$
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/ [R=410,NC,L]
+</code></pre>

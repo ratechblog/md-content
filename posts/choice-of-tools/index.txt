@@ -1,7 +1,7 @@
 Title: Choice of tools
 Content: If you want to develop a website (or any other application), you will need to examine your requirements and find an appropriate solution for the implementation. For example, static vs. dynamic website, whether to start from scratch, or use some low level / generic framework or a fully featured CMS.
 
-[Bootstrap](https://de.wikipedia.org/wiki/Bootstrap_(Framework)) is a very useful front-end web framework.
+[Bootstrap](https://de.wikipedia.org/wiki/Bootstrap_(Framework)) is a very useful front-end web framework. I definitely need to take a closer look at this.
 
 Often, there is no benefit in [reinventing the wheel](https://en.wikipedia.org/wiki/Reinventing_the_wheel). A prominent choice for a blogging software would be WordPress, etc..., but for now, it would add too much overhead and complexity for my current purposes.
 

@@ -1,0 +1,20 @@
+Title: Backup / Synchronize files using rsync
+Content: A simple and basic way to solve backup or synchonization issues, is using the tool `rsync`.
+The following example illustrates, how to maintain a backup copy from the source folder `/src` to the destination folder `/dest/backup`. This will create / modify the folder `/dest/backup/src` synchronized by the folder `/src`. Deprecated or deleted files will be put in `/dest/backup/deleted`.
+
+<pre><code class="language-bash">sudo rsync -avb --progress --delete --backup-dir=/dest/backup/deleted /src /dest/backup</code></pre>
+
+* -a, --archive
+  * archive mode; equals -rlptgoD (no -H,-A,-X)
+* -v, --verbose
+  * increase verbosity
+* -b, --backup
+  * make backups (see --suffix & --backup-dir)  
+  * --backup-dir=DIR        make backups into hierarchy based in DIR  
+   * --suffix=SUFFIX         backup suffix (default ~ w/o --backup-dir)
+* --delete
+  * delete extraneous files from dest dirs
+*  --progress
+  * This  option  tells  rsync  to  print  information  showing  the
+progress  of  the transfer. This gives a bored user something to
+watch.

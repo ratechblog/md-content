@@ -1,6 +1,8 @@
 Title: About
-Content: See https://ratechblog.com/post/hello-world
+Content: Code, Solutions, Open Source, Self Documentation, Blogging Experiment
 
-You can contact me under [contact@ratechblog.com](mailto:contact@ratechblog.com)
+See https://ratechblog.com/post/hello-world
+
+You can contact me at [contact@ratechblog.com](mailto:contact@ratechblog.com)
 
 More to come...

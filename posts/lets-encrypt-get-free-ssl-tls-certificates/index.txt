@@ -1,15 +1,15 @@
 Title: Let's Encrypt: Get free SSL / TLS certificates
 Content: Nowadays, HTTPS is pretty mandatory in order to secure communcation between client and server.
 
-####General information
+### General information
 * [https://en.wikipedia.org/wiki/Let’s_Encrypt](https://en.wikipedia.org/wiki/Let’s_Encrypt)
 * [https://letsencrypt.org/](https://letsencrypt.org/)
 * [https://github.com/letsencrypt](https://github.com/letsencrypt)
 * [https://letsencrypt.org/docs/client-options/](https://letsencrypt.org/docs/client-options/)
 
-####Client recommended by Let's Encrypt 
+### Client recommended by Let's Encrypt 
 * https://certbot.eff.org/
 * https://github.com/certbot/certbot
 
-####Java implementation of ACME client
+### Java implementation of ACME client
 * https://github.com/porunov/acme_client

@@ -1,0 +1,49 @@
+Title: Syntax highlighting with Prism
+Content: ### Download Prism
+* [prismjs.com](http://prismjs.com)
+
+### Include prism.css and prism.js
+
+<div class="language-html line-numbers">
+
+<pre><code>
+
+<html>
+<head>
+	...
+	<link href="themes/prism.css" rel="stylesheet" />
+</head>
+<body>
+	...
+	<script src="prism.js"></script>
+</body>
+</html>
+
+</code></pre>
+
+</div>
+
+
+### Highlight code
+* [http://prismjs.com/test.html](http://http://prismjs.com/test.html)
+`
+<div class="language-css line-numbers"><pre><code>
+<pre><code class="language-css">p { color: red }</code></pre>
+</code></pre></div>
+`
+
+### Enable line numbering
+
+<pre class="line-numbers"><code>
+a
+b
+c
+</code></pre>
+
+### Plugins
+* line-numbers
+* 
+
+### Facing problems by using Prism in combination with Markdown
+* TODO
+* Special tags like `<pre>` , `<code>` are candidate for problems
