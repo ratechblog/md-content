@@ -1,0 +1,12 @@
+Title: Free Application Server hosting / PaaS for testing and playing
+Content: ### [OpenShift](https://www.openshift.com/)
+* free tier testing was unlimited once, but now it is limited to 30 days
+
+### [Heroku](https://www.heroku.com/)
+* 550 free dyno hours per month
+
+### [Amazon Web Services AWS](https://aws.amazon.com/)
+* free tier is limited to 1 year
+
+### [Google Cloud Platform](https://cloud.google.com/)
+* [https://cloud.google.com/free/](https://cloud.google.com/free/)

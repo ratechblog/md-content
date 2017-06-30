@@ -2,3 +2,8 @@ Title: Create bootable USB stick from image using dd
 Content: <pre><code class="language-bash">sudo dd if=/src/os.img of=/dev/sdb</code></pre>
 
 * assure that the argument for the output file (of=) is correct, in order to avoid data loss
+* set higher blocksize for faster transfer with (bs=) parameter, e.g. <code>bs=1M</code>
+
+### Show progress
+* <code>kill -USR1 $(pgrep ^dd)</code>
+* or in newer versions <code>status=progress</code>

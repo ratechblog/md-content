@@ -1,0 +1,22 @@
+Title: ASEAG URA API Implementation in Java deployed to Heroku
+Content: Something i had on my list. Finally, i was able to use some spare time efficiently, and for now, i came to a satisfying and surprisingly easy result.
+
+This is about how to implement and deploy a realtime monitor for public transport departure times (e.g. bus, train).
+Here for the ASEAG company and implemented in Java and deployed to Heroku:
+
+[https://secure-savannah-16785.herokuapp.com/](https://secure-savannah-16785.herokuapp.com/)
+
+### TODO:
+* GTFS ?
+  * [https://en.wikipedia.org/wiki/General_Transit_Feed_Specification](https://en.wikipedia.org/wiki/General_Transit_Feed_Specification)
+  * [https://developers.google.com/transit/gtfs/](https://developers.google.com/transit/gtfs/)
+  * [https://developers.google.com/transit/gtfs-realtime/](https://developers.google.com/transit/gtfs-realtime/)
+* Statistics
+  * Database (Postgres, because OpenSource?)
+* Fancy frontend
+  * <s>Maybe bootstrap?</s>
+  * testing PrimeFaces first, since i decided to go JSF (JavaServer Faces), in order to apply and test my new set of skills ;-)
+
+
+### Update
+* Project documentation continued at [https://ratechblog.com/post/public-transport-stop-times-monitor-continued](https://ratechblog.com/post/public-transport-stop-times-monitor-continued)

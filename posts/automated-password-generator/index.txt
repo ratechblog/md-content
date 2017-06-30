@@ -1,0 +1,18 @@
+Title: Automated Password Generator
+Content: In order to generate random passwords with specific characteristics, the tool <code>apg</code> comes in very handy.
+
+* <code>sudo apt-get install apg</code>
+
+* e.g. parameter <code>-m</code> sets minimum password length, and <code>-x</code> sets maximum password length
+  * many more sophisticated options available
+* <code>apg -m 8 -x 8</code>
+
+### Example output
+<code>
+ogNebrow
+ibCowgak
+seifrif2
+esbevTio
+filuvtaf
+Tygheck3
+</code>

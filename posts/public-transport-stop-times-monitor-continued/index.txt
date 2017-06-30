@@ -1,0 +1,11 @@
+Title: Public Transport Stop Times Monitor - Continued
+Content: Continued from [https://ratechblog.com/post/aseag-ura-api-implementation-in-java-deployed-to-heroku](https://ratechblog.com/post/aseag-ura-api-implementation-in-java-deployed-to-heroku)
+
+* Implemented JSF and Primefaces
+* Refactored code
+* Implemented search, sorting, natural ordering etc.
+
+* Demo: [https://secure-savannah-16785.herokuapp.com/](https://secure-savannah-16785.herokuapp.com/)
+
+### Next on:
+* Statistics, and maybe find some patterns in traffic delays ;-)

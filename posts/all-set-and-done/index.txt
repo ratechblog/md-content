@@ -18,6 +18,10 @@ Content: ### Customize framework, template and css
 </code></pre>
   * Set $base variable in init.php
 
+  * Edit / Disable plugin 'pages' and edit 'theme/php/head.php' to show page list on top
+  * Edit plugin 'latest_posts' to show bullet points
+  * TODO: fix responsive design
+
 
 ### Setup https
 * `./certbot-auto certonly --manual -d domain.tld -d www.domain.tld`
@@ -27,8 +31,8 @@ Content: ### Customize framework, template and css
 
 
 ### Redirect www to non-www
-* .htaccess rules
+* .htaccess rules (see [https://ratechblog.com/post/htaccess-notes](https://ratechblog.com/post/htaccess-notes))
 
 
 ### Redirect transparently to subfolder
-* .htaccess rules
+* .htaccess rules (see [https://ratechblog.com/post/htaccess-notes](https://ratechblog.com/post/htaccess-notes))

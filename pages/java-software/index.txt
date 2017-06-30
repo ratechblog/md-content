@@ -1,4 +1,6 @@
 Title: Java Software
 Content: * [Universal SQL Client / SQuirrel SQL](http://squirrel-sql.sourceforge.net/)
 * [iDempiere](https://bitbucket.org/idempiere/idempiere)
+  * Open Source ERP software written in Java
+  * who needs SAP ;-)
 * JDownloader
